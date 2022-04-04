@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>TODO List</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>TODO LIST</h2>
+      <h3>Add Item</h3>
+      <p>
+        <input id="new-task" type="text" />
+        <input id="todoindex" type="text" hidden/>
+        <button id="addbtn" onclick="add()">Add</button
+        ><button id="updatebtn" style="display: none" onclick="update()">
+          update
+        </button>
+      </p>
+
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li>
+          <input type="checkbox" /><label>Make your todo list Now</label
+          ><input type="text" /><button class="edit">Edit</button
+          ><button class="delete">Delete</button>
+        </li>
+      </ul>
+
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked /><label>See the Doctor</label
+          ><input type="text" /><button class="edit">Edit</button
+          ><button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <script src="myscript.js"></script>
+  </body>
+</html>
